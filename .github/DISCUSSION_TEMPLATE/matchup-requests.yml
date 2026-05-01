@@ -1,0 +1,56 @@
+title: "[Matchup Request] "
+labels: ["matchup-request"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Want to see a specific head-to-head? File a matchup request.
+
+        Heads up: ChessBench produces ratings from Monte Carlo Elo across many opponents — individual matchups aren't usually the focus. But if there's a comparison the ratings don't fully capture (style mismatches, format-specific strengths, a genuine curiosity), this is the place.
+
+        Please [search existing requests](https://github.com/benjaminbrumfield/chessbench-community/discussions/categories/matchup-requests) before posting.
+
+  - type: input
+    id: player-a
+    attributes:
+      label: Player A
+      description: First model or engine. If it's already on chessbench.ai, use the same name.
+      placeholder: e.g. Claude Opus 4.7
+    validations:
+      required: true
+
+  - type: input
+    id: player-b
+    attributes:
+      label: Player B
+      description: Second model or engine.
+      placeholder: e.g. Stockfish-15-2000
+    validations:
+      required: true
+
+  - type: dropdown
+    id: format
+    attributes:
+      label: Format
+      options:
+        - Standard chess
+        - Chess960
+        - Both / either
+    validations:
+      required: true
+
+  - type: textarea
+    id: why
+    attributes:
+      label: Why this matchup?
+      description: What question are you hoping a head-to-head answers? Style mismatch, opening you want tested, anomaly you noticed in the ratings, etc.
+    validations:
+      required: true
+
+  - type: textarea
+    id: configs
+    attributes:
+      label: Specific configurations?
+      description: Temperatures, thinking effort, opening books, etc. Optional — leave blank for defaults.
+    validations:
+      required: false
