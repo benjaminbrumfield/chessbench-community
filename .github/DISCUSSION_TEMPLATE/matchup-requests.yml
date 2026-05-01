@@ -4,9 +4,9 @@ body:
   - type: markdown
     attributes:
       value: |
-        Want to see a specific head-to-head? File a matchup request.
+        Want to see a specific head-to-head matchup? File a matchup request.
 
-        Heads up: ChessBench produces ratings from Monte Carlo Elo across many opponents — individual matchups aren't usually the focus. But if there's a comparison the ratings don't fully capture (style mismatches, format-specific strengths, a genuine curiosity), this is the place.
+        Heads up: a dedicated head-to-head view is on the roadmap but hasn't been built yet. Today, ChessBench produces ratings from Monte Carlo Elo across many opponents, so individual matchups aren't surfaced directly on the site — that's coming. In the meantime, this is the place to flag comparisons you'd like to see, especially ones the ratings don't fully capture (style mismatches, format-specific strengths, a genuine curiosity).
 
         Please [search existing requests](https://github.com/benjaminbrumfield/chessbench-community/discussions/categories/matchup-requests) before posting.
 
