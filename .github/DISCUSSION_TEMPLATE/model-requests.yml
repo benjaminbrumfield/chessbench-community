@@ -1,0 +1,66 @@
+title: "[Model Request] "
+labels: ["model-request"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for suggesting a model! A few details up front help me prioritize and add models faster.
+
+        Before submitting, please [search existing requests](https://github.com/benjaminbrumfield/chessbench-community/discussions/categories/model-requests) — if your model is already there, upvoting (👍) is more useful than a duplicate thread.
+
+  - type: input
+    id: model-name
+    attributes:
+      label: Model name
+      description: The name you'd expect to see on the board (e.g. "Claude Opus 4.7", "GPT-5.1", "Llama 4 Maverick").
+      placeholder: e.g. Claude Opus 4.7
+    validations:
+      required: true
+
+  - type: input
+    id: provider
+    attributes:
+      label: Provider / family
+      description: Who makes it? (Anthropic, OpenAI, Google, Meta, Mistral, DeepSeek, xAI, etc.)
+      placeholder: e.g. Anthropic
+    validations:
+      required: true
+
+  - type: dropdown
+    id: access
+    attributes:
+      label: How is it accessed?
+      description: ChessBench needs a way to send moves to the model and get moves back. Open weights are easiest; public APIs are fine; gated/proprietary is hardest.
+      options:
+        - Public API (OpenAI, Anthropic, Google, etc.)
+        - Open weights (Hugging Face, etc.)
+        - Hosted via a third-party API (OpenRouter, Together, etc.)
+        - Gated / private / unsure
+    validations:
+      required: true
+
+  - type: input
+    id: link
+    attributes:
+      label: Link
+      description: Model card, announcement post, or API documentation. Helps confirm the right model is benchmarked.
+      placeholder: https://...
+    validations:
+      required: false
+
+  - type: textarea
+    id: why
+    attributes:
+      label: Why benchmark it?
+      description: One or two sentences. What makes this model interesting compared to what's already on the board?
+      placeholder: e.g. First open-weight reasoning model from this family — curious how it stacks up against the closed-source frontier.
+    validations:
+      required: true
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Anything else?
+      description: Specific configurations worth testing (temperature, reasoning effort), compute concerns, known quirks. Optional.
+    validations:
+      required: false
