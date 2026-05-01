@@ -8,7 +8,7 @@ body:
 
         Heads up: a dedicated head-to-head view is on the roadmap but hasn't been built yet. Today, ChessBench produces ratings from Monte Carlo Elo across many opponents, so individual matchups aren't surfaced directly on the site — that's coming. In the meantime, this is the place to flag comparisons you'd like to see, especially ones the ratings don't fully capture (style mismatches, format-specific strengths, a genuine curiosity).
 
-        Please [search existing requests](https://github.com/benjaminbrumfield/chessbench-community/discussions/categories/matchup-requests) before posting.
+        Please <a href="https://github.com/benjaminbrumfield/chessbench-community/discussions/categories/matchup-requests" target="_blank" rel="noopener">search existing requests</a> before posting.
 
   - type: input
     id: player-a

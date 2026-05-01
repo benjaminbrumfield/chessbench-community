@@ -6,7 +6,7 @@ body:
       value: |
         Thanks for suggesting a model! A few details up front help me prioritize and add models faster.
 
-        Before submitting, please [search existing requests](https://github.com/benjaminbrumfield/chessbench-community/discussions/categories/model-requests) — if your model is already there, upvoting (👍) is more useful than a duplicate thread.
+        Before submitting, please <a href="https://github.com/benjaminbrumfield/chessbench-community/discussions/categories/model-requests" target="_blank" rel="noopener">search existing requests</a> — if your model is already there, upvoting (👍) is more useful than a duplicate thread.
 
   - type: input
     id: model-name
